@@ -1,0 +1,17 @@
+  public void OnPostView()
+        {
+            Random r = new Random();
+            int random= r.Next(1,100); 
+            this.Number= random;
+         }
+		 
+		 
+		      <tr>
+                <td></td>
+                <td><input type="submit" value="Generate Number" asp-page-handler="View" /></td>
+            </tr>
+
+    <tr>
+                <td>Number: </td>
+                <td><input type="text" id="txtFirstName" name="FirstName" value= "@Model.Number"/></td>
+            </tr>
